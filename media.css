@@ -1,0 +1,440 @@
+@media (max-width: 599px) {
+
+    #Navbar {
+        padding: 20px 10px;
+    }
+
+    #Navbar  h1 {
+        font-size: 30px;
+        color: #121212;
+        width: 100%;
+    }
+    
+    #Navbar ul li a:hover {
+        color: #f1f1f1;
+    }
+    
+        #Navbar ul {
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 0, 0);
+        align-items: start;
+        transition: .3s left;
+        z-index: 1;
+    }
+
+    #Navbar ul h5 {
+        font-size: 40px;
+        display: initial;
+    }
+
+    #Navbar ul.view {
+        left: 0;
+    }
+
+    #Navbar ul li {
+        padding: 20px;
+    }
+
+    .menu {
+        display: initial;
+        z-index: 2;
+    }
+
+    #Hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 20px 10px;
+    height: 70vh;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top 80% left 0%;
+}
+
+
+.hero {
+    position: relative;
+    top: 20%;
+    left: 0%;
+    width: 70%;
+    height: 70vh;
+    padding: 5px;
+}
+
+
+    #Hero1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 40px;
+        height: 70vh;
+        text-align: start;
+    }
+
+    #Hero h2 {
+        font-size: 45px;
+        margin-bottom: 0.2em;
+    }
+
+    #Hero1 h2 {
+        font-size: 40px;
+        font-weight: 700;
+        font-family: 'Poppins';
+        margin-bottom: 0.2em;
+    }
+    
+    #Hero p {
+        font-size: 25px;
+        width: 90%;
+    }
+    
+    #Hero a, #Hero1 a {
+        font-size: 25px;
+        padding: 10px;
+    }
+    
+    #About {
+        padding: 20px 20px;
+    }
+    
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-container img {
+        width: 100%;
+    }
+    
+    .about {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .counter-wrapper {
+        flex-direction: column;
+    }
+
+    #Services {
+        padding: 20px 20px;
+    }
+    
+    .services {
+        width: 100%;
+    }
+
+    #Footer {
+        padding: 20px 20px;
+    }
+
+    #Footer h2 {
+        text-align: start;
+    }
+
+    .footer  {
+        width: 100%;
+        height: 45vh;
+        padding: 10px;
+    }
+
+    
+    .container-footer {
+        flex-direction: column;
+        gap: 0em;
+        align-items: center;
+        text-align: center;
+    }
+
+         /* closed services section */
+
+        #Contact {
+            padding: 20px 10px;
+        }
+    
+        #Contact-info {
+            padding: 20px 10px;
+        }
+        
+        #Contact h2 {
+            text-align: center;
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 1em;
+        }
+        
+        .contact-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .contact {
+            background: #1a1a1a;
+            flex-direction: column;
+            width: 100%;
+            height: 70vh;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5em;
+        }
+    
+        .contact_info {
+            width: 100%;
+        }
+        
+        .contact span {
+            display: none;
+        }
+    
+        form input, textarea {
+            width: 100%;
+        }
+
+    footer {
+        padding: 20px 0px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px){
+
+    #Navbar {
+        padding: 20px 40px;
+    }
+
+    #Navbar ul {
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 85vh;
+        background: rgba(0, 0, 0, 0.733);
+        align-items: start;
+        transition: .3s left;
+        z-index: 10000;
+    }
+
+    #Navbar ul.view {
+        left: 0;
+    }
+
+    #Navbar ul li {
+        padding: 20px;
+    }
+
+    #Navbar ul h5 {
+        font-size: 40px;
+        display: initial;
+    }
+
+    #Navbar ul li a:hover {
+        color: #f1f1f1;
+    }
+
+    .menu {
+        display: initial;
+    }
+
+    #Hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 20px 40px;
+    }
+
+    .hero {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+    }
+
+    #Hero1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 20px 40px;
+        height: 70vh;
+        text-align: start;
+    }
+
+    #Hero h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: .2em;
+        color: rgb(255, 255, 255);
+    }
+    
+    #Hero1 h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: .4em;
+        width: 50%;
+    }
+    
+    #Hero p {
+        font-size: 1.7rem;
+        width: 80%;
+        margin-bottom: 1.5em;
+        color: rgb(194, 192, 192);
+    }
+    
+    #Hero a {
+        font-size: 25px;
+        padding: 10px;
+    }
+    
+    #About {
+        padding: 20px 20px;
+    }
+    
+    .about-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
+    }
+    
+    .about-container img {
+        width: 40%;
+        height: 55vh;
+    }
+    
+    .oracare-info {
+        width: 100%;
+        height: 55vh;
+    }
+    
+    .oracare-info p {
+        font-style: italic;
+        color: #494949c4;
+        font-size: 1.41rem;
+        margin-bottom: 1em;
+    }
+
+
+    #Services {
+        padding: 20px 40px;
+    }
+    
+    .services {
+        width: 80%;
+    }
+
+    .services svg  {
+        width: 20%;
+        padding: 20px;
+    }
+
+    .services img {
+        object-fit: cover;
+    }
+
+        /* closed services section */
+
+        #Contact {
+            padding: 20px 10px;
+        }
+    
+        #Contact-info {
+            padding: 20px 40px;
+        }
+        
+        #Contact h2 {
+            text-align: center;
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 1em;
+        }
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .contact {
+            background: #1a1a1a;
+            display: flex;
+            width: 95%;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5em;
+        }
+    
+        .contact_info {
+            width: 100%;
+        }
+        
+        .contact span {
+            width: 100%;
+            height: 60vh;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            transition: all .3s;
+        }
+
+        #Footer {
+            padding: 20px 10px;
+        }
+        
+        #Footer h2 {
+            font-size: 40px;
+            text-align: start;
+            color: #dbdbdb;
+            margin-bottom: 1em;
+        }
+        
+        .container-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer  {
+            width: 100%;
+            height: 45vh;
+            padding: 5px;
+            margin-left: 2%;
+        }
+
+        .footer p {
+            color: #aaa;
+            text-align: start;
+            font-size: 1.2rem;
+        }
+        
+        footer p {
+            font-size: 1.5rem;
+        }
+        
+        footer span {
+            color: #12d10c;
+            font-weight: 700;
+        }
+
+
+    
+        form input, textarea {
+            width: 100%;
+        }
+
+    footer {
+        padding: 20px 40px;
+    }
+}
