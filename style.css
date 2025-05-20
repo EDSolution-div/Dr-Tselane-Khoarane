@@ -43,18 +43,8 @@ html {
 }
 
 #Navbar  h1 {
-    font-size: 40px;
+    font-size: 3rem;
     color: #121212;
-}
-
-#Navbar ul h5 {
-    font-size: 40px;
-    color: #ddd;
-    width: 100%;
-    padding: 10px;
-    user-select: none;
-    text-decoration: underline #a5519c;
-    display: none;
 }
 
 #Navbar  ul {
@@ -65,15 +55,16 @@ html {
 
 #Navbar  ul li {
     list-style: none;
-
 }
 
 #Navbar  ul li a {
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
     font-size: 2rem;
-    color: rgba(228, 79, 166, 0.932);
+    color: rgb(228, 79, 166);
     transition: .5s;
+    font-weight: 800;
+    position: relative;
 }
 
 /*#Navbar  ul li a:hover,
@@ -84,19 +75,32 @@ html {
     cursor: pointer;
 }*/
 
-#Navbar ul li a:hover {
-    color: #1a1a1a;
+/*#Navbar  ul li a.active {
+    color: #fff;
+    background:  rgb(228, 79, 166);
+    border-radius: 20px;
+}*/
+
+#Navbar ul li a:hover::after,
+#Navbar  ul li a.active::after {
+    content: " ";
+    width: 35%;
+    height: 4px;
+    background: rgb(228, 79, 166);
+    position: absolute;
+    bottom: -2px;
+    left: 50px;
 }
 
-#Navbar ul li a:hover::after {
+/*#Navbar  ul li a.active::after {
     content: " ";
     width: 30%;
-    height: 2px;
-    background: rgba(70, 64, 67, 0.932);
+    height: 4px;
+    background:  rgba(228, 79, 166, 0.932);
     position: absolute;
     bottom: -4px;
     left: 10px;
-}
+}*/
 
 /*mobile menu*/
 
@@ -153,7 +157,7 @@ html {
     align-items: start;
     padding: 20px 80px;
     height: 80vh;
-    background-image: linear-gradient( 90deg, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.452)), url(images/pexels-cottonbro-6502740.jpg);
+    background-image: linear-gradient( 90deg, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.452)), url(images/pexels-cedric-fauntleroy-4269694.jpg);
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
@@ -177,7 +181,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 
 #Hero h2 {
@@ -188,10 +192,11 @@ html {
 }
 
 #Hero1 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: .5em;
     color: #fff;
+    user-select: none;
 }
 
 #Hero p {
@@ -234,12 +239,20 @@ html {
     justify-content: center;
     align-items: center;
     gap: 1em;
-    width: 80%;
+    width: 100%;
 }
 
 .about-container img {
+    width: 70%;
+    height: 65vh;
+    background-position: center;
+    object-fit: cover;
+    background-color: #92548c;
+}
+
+.img_1 img {
     width: 50%;
-    height: 60vh;
+    height: 65vh;
     background-position: center;
     object-fit: cover;
     background-color: #92548c;
@@ -253,15 +266,39 @@ html {
     padding: 10px;
 }
 
+.drkhoarane {
+    width: 100%;
+    height: 40vh;
+    border: 5px solid #c4c4c4;
+    background: #92548c;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.425);
+    padding: 15px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/*.drkhoarane:hover,
+.drkhoarane p:hover {
+    color: #f1f1f1;
+    transition: .5s;
+    background: #9e3e79;
+}*/
+
+.drkhoarane p {
+    font-style: italic;
+    color: #d3d3d3;
+    font-size: 1.5rem;
+}
+
 .oracare-info span {
     font-style: italic;
-    color: #9e3e79;
+    color: rgb(158, 67, 147);
     font-size: 2rem;
 }
 
 .oracare-info h3 {
     font-style: italic;
-    color: #494949c4;
+    color: #2c2c2cd8;
     font-size: 2.5rem;
     margin-bottom: .7em;
 }
@@ -288,12 +325,14 @@ html {
 }
 #Services h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: 700;
+    margin-bottom: 1em;
+    color: #584047;
 }
 
 #Services span {
-    color: rgba(190, 23, 120, 0.932);
+    color: rgba(143, 55, 133, 0.863);
 }
 
 .container-services {
@@ -302,30 +341,22 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 1em;
+    gap: 2em;
 }
 
 .services {
     width: 30%;
-    height: 55vh;
-    background: rgba(0, 0, 0, 0.712);
+    height: 60vh;
+    background: rgb(197, 165, 174);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.76);
-    padding: 5px;
-}
-
-.sev-2 {
-    background: rgba(119, 14, 32, 0.877);
-}
-
-.sev-1 {
-    background: rgba(119, 14, 32, 0.877);
+    padding: 10px;
 }
 
 .services svg  {
     object-fit: cover;
-    width: 25%;
+    width: 35%;
     background: #935a91;
-    padding: 15px;
+    padding: 20px;
     clip-path: polygon(50% 0, 0 25%, 0 75%, 50% 100%, 100% 75%, 100% 25%);
     transition: .5s;
     cursor: pointer;
@@ -344,15 +375,13 @@ html {
 
 /*.cls-1 */
 
-
-
 .services svg:hover{
     background: #fff;
     fill: #a5519c;
 }
 
 .services h4 {
-    color: #dbdbdb;
+    color: #f1f1f1;
     font-size: 40px;
     margin-bottom: .5em;
 }
@@ -360,7 +389,7 @@ html {
 .services p {
     font-size: 20px;
     margin-bottom: 1em;
-    color: #aaa;
+    color: #494949c4;
 }
 
 .services a {
@@ -379,6 +408,85 @@ html {
     color: #dbdbdb;
     border-radius: 0 50%;
 }
+
+/* banner and FAQ section */
+
+#banner {
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.521)), url(images/pexels-cottonbro-6502740.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#banner h2 {
+    color: #eee;
+    font-size: 4rem;
+}
+
+.FAQ-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.FAQ-container .Faq {
+    width: 40%;
+    border: 2px solid #92548c;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    overflow: hidden;
+    background: #ddd;
+}
+
+.FAQ-container .Faq .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.FAQ-container .Faq.active .heading {
+    background: #92548c;
+    color: #ddd;
+}
+
+.FAQ-container .Faq .heading i {
+    transition: 0.5s cubic-bezier(.05, .89, .26, 1.31);
+}
+
+.FAQ-container .Faq.active .heading i {
+    transform: rotate(180deg);
+}
+
+.FAQ-container .Faq .answer {
+    line-height: 1.8;
+    padding: 10px;
+    height: 0;
+    font-size: 1.3rem;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+
+.FAQ-container .Faq.active .answer {
+    padding: 10px;
+    height: auto;
+    transform: scaleY(1);
+    transition: 0.5s cubic-bezier(.05, .89, .26, 1.31);
+}
+
+/* Close banner and FAQ section */
 
 .counter-wrapper {
     background: url(atikah-akhtar-XJptUS8nbhs-unsplash.jpg);
@@ -445,16 +553,16 @@ html {
     padding: 20px 80px;
 }
 
-#Contact  h3{
+#Contact  h3 {
     text-align: center;
-    font-size: 40px;
-    color: #0c0f14;
-    margin-bottom: .5em;
-    font-weight: 800;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: #584047;
 }
 
 #Contact  span{
-    color: rgba(190, 23, 120, 0.932);
+    color: rgb(158, 67, 147);
 }
 
 
@@ -481,14 +589,12 @@ html {
     gap: 1.5em;
 }
 
-.contact span {
-    width: 100%;
-    height: 60vh;
+.contact img {
+    width: 70%;
+    height: 65vh;
     background-position: center;
-    background-size: cover;
-    background-image: url(images/doc-img_1.jpg);
-    cursor: pointer;
-    transition: all .3s;
+    object-fit: cover;
+    background-color: #92548c;
 }
 
 
@@ -503,8 +609,9 @@ form {
 }
 
 form h5 {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #ddd;
+    margin-bottom: .5em;
 }
 
 form button {
@@ -549,10 +656,9 @@ form input::placeholder, textarea::placeholder {
 }
 
 #Footer h2 {
-    font-size: 40px;
+    font-size: 2.3rem;
     text-align: center;
     color: #dbdbdb;
-    margin-bottom: 1em;
 }
 
 .container-footer {
@@ -619,7 +725,7 @@ footer span {
 .backTop{
     position: fixed;
     bottom: 10%;
-    left: 90%;
+    left: 95%;
     padding: 10px;
     text-align: center;
     background: #92548c;
