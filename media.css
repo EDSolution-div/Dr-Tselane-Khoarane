@@ -144,7 +144,7 @@
 
     .oracare-info {
         width: 100%;
-        padding: 10px;
+        padding: 20px;
     }
 
     .oracare-info p {
@@ -170,7 +170,6 @@
 
     .services {
         width: 30%;
-        height: 60vh;
         padding: 10px;
     }
 
@@ -205,6 +204,7 @@
     
     .services {
         width: 100%;
+        padding: 20px;
     }
 
 
@@ -425,7 +425,7 @@
     }
 
     .backTop{
-        left: 80%;
+        left: 85%;
     }
 
 
