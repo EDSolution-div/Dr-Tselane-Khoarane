@@ -35,6 +35,10 @@ html {
     color: #121212;
 }
 
+#Navbar  img{
+    width: 30%;
+}
+
 #Navbar  ul {
     display: flex;
     justify-content: center;
@@ -43,6 +47,31 @@ html {
 
 #Navbar  ul li {
     list-style: none;
+    position: relative;
+}
+
+#Navbar  ul li ul {
+    position: absolute;
+    width: 200px;
+    left: 0;
+    display: none;
+    background: #f4d9f5;
+    padding: 10px 5px;
+}
+
+#Navbar  ul li ul li {
+    width: 100%;
+    padding: 10px 0;
+}
+
+#Navbar  ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+#Navbar  ul li:focus-within > ul,
+#Navbar  ul li:hover > ul {
+    display: block;
 }
 
 #Navbar  ul li a {
@@ -121,7 +150,7 @@ html {
     align-items: start;
     padding: 20px 80px;
     height: 80vh;
-    background-image: linear-gradient( 90deg, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.452)), url(images/pexels-cedric-fauntleroy-4269694.jpg);
+    background-image: linear-gradient( 90deg, rgba(0, 0, 0, 0.925), rgba(0, 0, 0, 0)), url(images/hero2.jpg);
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
@@ -137,15 +166,15 @@ html {
 
 #Hero1 {
     padding: 20px 80px;
-    background-image: linear-gradient( 90deg, rgba(0, 0, 0, 0.973), rgba(0, 0, 0, 0.158)), url(images/hero2.jpg);
+    background-image: linear-gradient( 90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.363)), url(images/Dr\ T.Khoarane-home.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 #Hero h2 {
@@ -156,9 +185,19 @@ html {
 
 #Hero1 h2 {
     font-size: 3rem;
-    margin-bottom: .5em;
+    margin-bottom: .2em;
     color: #fff;
     user-select: none;
+}
+
+#Hero1 p {
+    font-size: 1.2rem;
+    width: 50%;
+    color: #c761a0;
+}
+
+#Hero1 span {
+    color: #aaa;
 }
 
 #Hero p {
@@ -169,10 +208,10 @@ html {
 }
 
 #Hero a, #Hero1 a {
-    background: #9e3e79;
     text-decoration: none;
     font-size: 1.5rem;
-    color: #fff;
+    color: rgba(190, 23, 120, 0.932);
+    border: 1px solid #fff;
     padding: 15px;
     border-radius: 20px 7%;
     transition: .4s;
@@ -181,13 +220,25 @@ html {
 
 #Hero a:hover  {
     background: none;
-    color: rgba(190, 23, 120, 0.932);
+    background: rgba(190, 23, 120, 0.932);
     border-radius: 7% 20px;
-    border: 2px solid #fff;
+    color: #fff;
+
 }
 
 #About {
     padding: 20px 80px;
+}
+
+#About h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: .1em;
+    color: #584047;
+}
+
+#About span {
+    color: rgba(143, 55, 133, 0.863);
 }
 
 .about-container {
@@ -196,13 +247,53 @@ html {
     align-items: center;
 }
 
-.about {
+.about-container_doc {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1em;
-    width: 100%;
 }
+
+.about-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_doctor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2em;
+    gap: 1em;
+}
+
+.about_doctor2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+}
+
+.about-container_doc {
+    gap: 1em;
+}
+
+.organizations_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.organizations_img img{
+    width: 80%;
+    background-position: center;
+    object-fit: cover;
+}
+
 
 .about-container img {
     width: 70%;
@@ -213,8 +304,16 @@ html {
 }
 
 .img_1 img {
-    width: 50%;
-    height: 65vh;
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    object-fit: cover;
+    box-shadow: 10px 0 5px rgba(29, 25, 25, 0.418);
+}
+
+.img_2 img {
+    width: 100%;
+    height: 51vh;
     background-position: center;
     object-fit: cover;
     background-color: #92548c;
@@ -228,24 +327,29 @@ html {
     padding: 10px;
 }
 
-.khoarane-info {
-    width: 100%;
-    height: 65vh;
-    background-color: #f0c7f1;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.158);
-    padding: 10px;
-}
-
 .drkhoarane {
-    width: 100%;
-    height: 50vh;
-    border: 5px solid #c4c4c4;
+    width: 80%;
+    border: 5px solid #f0c7f1;
     background: #92548c;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.425);
     padding: 15px;
     transition: .5s;
     cursor: pointer;
 }
+
+.khoarane-info {
+    width: 80%;
+    background-color: #f0c7f1;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.158);
+    padding: 10px;
+}
+
+.khoarane-info span {
+    color: #9e3e79;
+    font-size: 4rem;
+}
+
+
 
 /*.drkhoarane:hover,
 .drkhoarane p:hover {
@@ -278,7 +382,7 @@ html {
     color: #494949c4;
     font-size: 1.3rem;
     margin-bottom: 1.5em;
-    width: 80%;
+    width: 100%;
 }
 
 .khoarane-info h3 {
@@ -291,7 +395,7 @@ html {
 .khoarane-info p {
     font-style: italic;
     color: #494949c4;
-    font-size: 17.7px;
+    font-size: 20px;
     margin-bottom: 1.5em;
     width: 100%;
 }
@@ -361,6 +465,7 @@ html {
 
 .services img {
     object-fit: cover;
+    background-position: center;
     width: 100%;
     height: 23vh;
     background-size: cover;
@@ -403,6 +508,121 @@ html {
     border-radius: 0 50%;
 }
 
+
+#Dentist-services {
+    padding: 20px 80px;
+}
+
+#Dentist-services h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: #584047;
+}
+
+#Dentist-services span {
+    color: rgba(143, 55, 133, 0.863);
+}
+
+.dentist-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.root_bridges {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.root_bridges img {
+    background-position: center;
+    width: 70%;
+    height: 40vh;
+    background-size: cover;
+}
+
+.mean img {
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
+
+.before img {
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
+
+.after img{
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
+
+.root h4 {
+    font-size: 40px;
+    color: #9e3e79;
+}
+
+.root  p {
+    font-size: 20px;
+    color: #838282;
+}
+
+.bridges h4 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.bridges p {
+    font-size: 20px;
+    color: #aaa;
+}
+
+.root {
+    border: 2px solid #92548c;
+    padding: 10px;
+    width: 60%;
+}
+
+.bridges {
+    background: #92548c;
+    padding: 10px;
+    width: 60%;
+}
+
+.root h3  {
+    font-size: 27px;
+    color:#9e3e79;
+}
+
+.mean-after {
+    gap: 2em;
+    width: 30%;
+}
+
+.before-after {
+    gap: 2em;
+}
+
+.before-after h3 {
+    color: #9e3e79;
+    font-size: 27px;
+}
+
+.mean-after h3 {
+    color: #9e3e79;
+    font-size: 27px;
+}
+
+
+
 /* banner and FAQ section */
 
 #Customer {
@@ -436,7 +656,7 @@ html {
 
 .customer {
     width: 30%;
-    height: 40vh;
+    height: 45vh;
     padding: 10px;
     background: #f0c7f1;
     box-shadow: 0 5px 10px rgba(12, 12, 12, 0.726);

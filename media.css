@@ -4,10 +4,8 @@
         padding: 20px 10px;
     }
 
-    #Navbar  h1 {
-        font-size: 1.5rem;
-        color: #121212;
-        width: 100%;
+    #Navbar  img{
+        width: 50%;
     }
     
     #Navbar ul li a:hover {
@@ -33,11 +31,23 @@
 
     #Navbar ul li {
         padding: 20px;
+        position: relative;
     }
 
     .menu {
         display: initial;
         z-index: 2;
+    }
+
+    #Navbar ul li ul {
+        position: absolute;
+        left: 100%;
+        background: none;
+    }
+
+    #Navbar ul li ul li ul{
+        left: 0;
+        width: 100%;
     }
 
     #Hero {
@@ -84,6 +94,12 @@
         font-family: 'Poppins';
         margin-bottom: 0.1em;
     }
+
+    #Hero1 p {
+        font-size: 1.2rem;
+        width: 80%;
+        color: #c761a0;
+    }
     
     #Hero p {
         width: 100%;
@@ -109,8 +125,21 @@
     }
     
     .about {
-        flex-direction: column;
         width: 100%;
+    }
+
+    .about-home {
+        flex-direction: column;
+    }
+
+    .about_doctor {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .about_doctor2 {
+        flex-direction: column;
+        gap: 1em;
     }
 
     .oracare-info {
@@ -123,8 +152,13 @@
         width: 100%;
     }
 
+    .khoarane-info {
+        width: 100%;
+
+    }
+
     .drkhoarane {
-        height: 100vh;
+        width: 100%;
         padding: 15px;
     }
 
@@ -174,6 +208,141 @@
     .services {
         width: 100%;
     }
+
+
+    #Dentist-services {
+        padding: 20px 20px;
+    }
+    
+    .dentist-container {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .root_bridges {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+    }
+    
+    .root_bridges img {
+        background-position: center;
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+    }
+    
+    .mean img {
+        background-position: center;
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+    }
+    
+    .before img {
+        background-position: center;
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+    }
+    
+    .after img{
+        background-position: center;
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+    }
+    
+    .root h4 {
+        font-size: 40px;
+        color: #9e3e79;
+    }
+    
+    .root  p {
+        font-size: 20px;
+        color: #838282;
+    }
+    
+    .bridges h4 {
+        font-size: 40px;
+        color: #fff;
+    }
+    
+    .bridges p {
+        font-size: 20px;
+        color: #aaa;
+    }
+    
+    .root {
+        border: 2px solid #92548c;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .bridges {
+        background: #92548c;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .root h3  {
+        font-size: 27px;
+        color:#9e3e79;
+    }
+    
+    .mean-after {
+        gap: 2em;
+        width: 30%;
+    }
+    
+    .before-after {
+        gap: 2em;
+    }
+    
+    .before-after h3 {
+        color: #9e3e79;
+        font-size: 27px;
+    }
+    
+    .mean-after h3 {
+        color: #9e3e79;
+        font-size: 27px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     #Footer {
         padding: 20px 20px;
@@ -304,6 +473,10 @@
         padding: 20px 40px;
     }
 
+    #Navbar  img{
+        width: 50%;
+    }
+
     #Navbar ul {
         position: fixed;
         flex-direction: column;
@@ -323,6 +496,7 @@
 
     #Navbar ul li {
         padding: 20px;
+        position: relative;
     }
 
     #Navbar ul h5 {
@@ -336,6 +510,17 @@
 
     .menu {
         display: initial;
+    }
+
+    #Navbar ul li ul {
+        position: absolute;
+        left: 100%;
+        background: none;
+    }
+
+    #Navbar ul li ul li ul{
+        left: 0;
+        width: 100%;
     }
 
     #Hero {
@@ -395,14 +580,34 @@
         justify-content: center;
         align-items: center;
     }
+
+    .about_doctor {
+        flex-direction: column;
+        gap: 1em;
+    }
+
     
-    .about {
+    .about_doctor {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 1em;
-        width: 100%;
     }
+
+    .img_1 img {
+        display: none;
+    }
+
+    .img_2 img {
+        width: 100%;
+        height: 95vh;
+    }
+    
+    /*.drkhoarane {
+        width: 100%;
+        height: 85vh;
+        padding: 15px;
+    }*/
     
     .about-container img {
         width: 40%;
@@ -412,7 +617,7 @@
     
     .oracare-info {
         width: 100%;
-        height: 55vh;
+
     }
     
     .oracare-info p {
@@ -421,9 +626,11 @@
         margin-bottom: 1em;
     }
 
-    .drkhoarane {
-        height: 76vh;
+    .khoarane-info {
+        width: 100%;
     }
+
+
 
     .drkhoarane p {
         font-style: italic;
@@ -453,6 +660,135 @@
     .services img {
         object-fit: cover;
     }
+
+
+    #Dentist-services {
+        padding: 20px 40px;
+    }
+    
+    .dentist-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .root_bridges {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+    }
+    
+    .root_bridges img {
+        background-position: center;
+        width: 50%;
+        height: 40vh;
+        background-size: cover;
+    }
+    
+    .mean img {
+        background-position: center;
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+    }
+    
+    .before img {
+        background-position: center;
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+    }
+    
+    .after img{
+        background-position: center;
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+    }
+    
+    .root h4 {
+        font-size: 40px;
+        color: #9e3e79;
+    }
+    
+    .root  p {
+        font-size: 20px;
+        color: #838282;
+    }
+    
+    .bridges h4 {
+        font-size: 40px;
+        color: #fff;
+    }
+    
+    .bridges p {
+        font-size: 20px;
+        color: #aaa;
+    }
+    
+    .root {
+        border: 2px solid #92548c;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .bridges {
+        background: #92548c;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .root h3  {
+        font-size: 27px;
+        color:#9e3e79;
+    }
+    
+    .mean-after {
+        gap: 4em;
+        width: 100%;
+        display: flex;
+    }
+    
+    .before-after {
+        gap: 4em;
+        width: 100%;
+        display: flex;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         /* closed services section */
 
