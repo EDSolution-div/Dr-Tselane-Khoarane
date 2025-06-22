@@ -78,7 +78,7 @@ html {
     text-decoration: none;
     padding: 10px;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
     color: #a5519c;
     transition: .5s;
     position: relative;
@@ -779,8 +779,9 @@ form input::placeholder, textarea::placeholder {
 
 #Footer {
     padding: 20px 80px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.671)), url(images/bogdan-condr-q1KLbswF70Y-unsplash.jpg);
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.671)), url(images/bogdan-condr-q1KLbswF70Y-unsplash.jpg);*/
     background-position: center;
+    background-color: #121212;
     background-size: cover;
 }
 
@@ -810,9 +811,9 @@ form input::placeholder, textarea::placeholder {
 
 .footer  {
     width: 70%;
-    height: 45vh;
+
     padding: 10px;
-    margin-left: 6%;
+    /*margin-left: 6%;*/
     margin-bottom: 1em;
 }
 
