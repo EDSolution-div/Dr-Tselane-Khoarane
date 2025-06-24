@@ -144,17 +144,17 @@
 
     .img_1 img {
         width: 100%;
-        height: 45vh;
+        height: 40vh;
     }
     
     .img_2 img {
         width: 100%;
-        height: 45vh;
+        height: 40vh;
     }
 
     .oracare-info {
         width: 100%;
-        padding: 20px;
+        padding: 20px 0;
     }
 
     .oracare-info p {
@@ -391,9 +391,15 @@
 
         .footer  {
             width: 70%;
-
             padding: 15px;
             margin-bottom: 1em;
+        }
+
+        #Footer img {
+            width: 90%;
+            height: 20vh;
+            text-align: start;
+            align-items: start;
         }
         
         .footer svg {
