@@ -149,7 +149,7 @@ html {
     justify-content: center;
     align-items: start;
     padding: 20px 80px;
-    height: 60vh;
+    height: 45vh;
     background-image: linear-gradient( 90deg, rgba(0, 0, 0, 0.925), rgba(0, 0, 0, 0)), url(images/hero2.jpg);
     background-size: cover;
     width: 100%;
@@ -179,7 +179,6 @@ html {
 
 #Hero h2 {
     font-size: 3rem;
-    margin-bottom: .5em;
     color: rgb(255, 255, 255);
 }
 
@@ -203,7 +202,7 @@ html {
 #Hero p {
     font-size: 1.5rem;
     width: 80%;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     color: rgb(194, 192, 192);
 }
 

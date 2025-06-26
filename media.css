@@ -56,7 +56,7 @@
     justify-content: center;
     align-items: start;
     padding: 20px 10px;
-    height: 60vh;
+    height: 50vh;
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@
     position: relative;
     top: 20%;
     left: 0%;
-    width: 70%;
+    width: 100%;
     height: 70vh;
     padding: 5px;
 }
@@ -79,7 +79,7 @@
         justify-content: center;
         align-items: center;
         padding: 20px 40px;
-        height: 60vh;
+        height: 50vh;
         text-align: center;
     }
 
@@ -122,6 +122,7 @@
 
     .about-container img {
         width: 100%;
+        height: 40vh;
     }
     
     .about {
@@ -390,14 +391,14 @@
         }
 
         .footer  {
-            width: 70%;
-            padding: 15px;
-            margin-bottom: 1em;
+            width: 80%;
+            padding: 0px;
+            margin-bottom: 0em;
         }
 
         #Footer img {
             width: 90%;
-            height: 20vh;
+            height: 15vh;
             text-align: start;
             align-items: start;
         }
@@ -456,18 +457,22 @@
     #Navbar  img{
         width: 50%;
     }
-
-    #Navbar ul {
+    
+    #Navbar ul li a:hover {
+        color: #f1f1f1;
+    }
+    
+        #Navbar ul {
         position: fixed;
         flex-direction: column;
         top: 0;
         left: -100%;
         width: 50%;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.973);
+        background: rgb(0, 0, 0);
         align-items: start;
         transition: .3s left;
-        z-index: 10000;
+        z-index: 1;
     }
 
     #Navbar ul.view {
@@ -479,17 +484,9 @@
         position: relative;
     }
 
-    #Navbar ul h5 {
-        font-size: 40px;
-        display: initial;
-    }
-
-    #Navbar ul li a:hover {
-        color: #f1f1f1;
-    }
-
     .menu {
         display: initial;
+        z-index: 2;
     }
 
     #Navbar ul li ul {
@@ -504,50 +501,64 @@
     }
 
     #Hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        padding: 20px 40px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 20px 10px;
+    height: 50vh;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top 80% left 50%;
+}
 
-    .hero {
-        position: absolute;
-        top: 40%;
-        left: 10%;
-    }
+
+.hero {
+    position: relative;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+    height: 70vh;
+    padding: 5px;
+}
 
     #Hero1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: center;
         padding: 20px 40px;
-        height: 70vh;
-        text-align: start;
+        height: 50vh;
+        text-align: center;
     }
 
     #Hero h2 {
-        font-size: 35px;
-        font-weight: 700;
-        margin-bottom: .2em;
-        color: rgb(255, 255, 255);
+        font-size: 2.5rem;
+        margin-bottom: 0.1em;
     }
-    
+
     #Hero1 h2 {
-        margin-bottom: .4em;
+        font-size: 3rem;
+        font-weight: 700;
+        font-family: 'Poppins';
+        margin-bottom: 0.1em;
+    }
+
+    #Hero1 p {
+        font-size: 1.2rem;
         width: 80%;
+        color: #c761a0;
     }
     
     #Hero p {
-        font-size: 25px;
-        width: 80%;
-        margin-bottom: 1.5em;
-        color: rgb(194, 192, 192);
+        width: 100%;
+        font-size: 1.3rem;
+        margin-bottom: 1em;
     }
     
-    #Hero a {
-        font-size: 22px;
+    #Hero a, #Hero1 a {
+        font-size: 20px;
         padding: 10px;
     }
     
@@ -556,9 +567,20 @@
     }
     
     .about-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+    }
+
+    .about-container img {
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .about {
+        width: 100%;
+    }
+
+    .about-home {
+        flex-direction: column;
     }
 
     .about_doctor {
@@ -566,88 +588,93 @@
         gap: 1em;
     }
 
-    
-    .about_doctor {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .about_doctor2 {
+        flex-direction: column;
         gap: 1em;
     }
 
     .img_1 img {
-        display: none;
+        width: 100%;
+        height: 40vh;
     }
-
+    
     .img_2 img {
         width: 100%;
-        height: 95vh;
+        height: 40vh;
     }
-    
-    /*.drkhoarane {
-        width: 100%;
-        height: 85vh;
-        padding: 15px;
-    }*/
-    
-    .about-container img {
-        width: 40%;
-        height: 55vh;
-        display: none;
-    }
-    
+
     .oracare-info {
         width: 100%;
-
+        padding: 20px 0;
     }
-    
+
     .oracare-info p {
-        font-style: italic;
-        color: #494949c4;
-        margin-bottom: 1em;
+        width: 100%;
     }
 
     .khoarane-info {
         width: 100%;
+
     }
 
-
+    .drkhoarane {
+        width: 100%;
+        padding: 15px;
+    }
 
     .drkhoarane p {
         font-style: italic;
+        font-size: 19px;
         color: #d3d3d3;
-        font-size: 22px;
     }
 
-    .khoarane-info p {
-        font-size: 22px;
-        margin-bottom: 1.5em;
+
+    .services {
+        width: 30%;
+        padding: 10px;
+    }
+
+    #Customer {
+        padding: 20px 20px;
+    }
+
+    .customer-container {
+        flex-direction: column;
+    }
+    
+    .customer {
+        width: 100%;
+    }
+
+    #banner {
+        height: 120vh;
+        width: 100%;
+    }
+
+    .FAQ-container {
+        flex-flow: column;
+    }
+
+    .FAQ-container .Faq {
         width: 100%;
     }
 
     #Services {
-        padding: 20px 40px;
+        padding: 20px 20px;
     }
     
     .services {
-        width: 47%;
-    }
-
-    .services svg  {
-        width: 30%;
+        width: 100%;
         padding: 20px;
-    }
-
-    .services img {
-        object-fit: cover;
     }
 
 
     #Dentist-services {
-        padding: 20px 40px;
+        padding: 20px 20px;
     }
     
     .dentist-container {
-        display: flex;
+        flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -660,7 +687,7 @@
     
     .root_bridges img {
         background-position: center;
-        width: 50%;
+        width: 100%;
         height: 40vh;
         background-size: cover;
     }
@@ -724,68 +751,64 @@
     }
     
     .mean-after {
-        gap: 4em;
+        gap: 2em;
         width: 100%;
-        display: flex;
     }
     
     .before-after {
-        gap: 4em;
-        width: 100%;
-        display: flex;
+        gap: 2em;
     }
     
+    .before-after h3 {
+        color: #9e3e79;
+        font-size: 27px;
+    }
+    
+    .mean-after h3 {
+        color: #9e3e79;
+        font-size: 27px;
+    }
 
+    #Footer {
+        padding: 20px 20px;
+    }
 
+    #Footer h2 {
+        text-align: start;
+    }
 
+    .footer  {
+        width: 100%;
+        height: 45vh;
+        padding: 10px;
+    }
 
+    
+    .container-footer {
+        display: flex;
+        gap: 0em;
+        justify-content: center;
+        align-items: start;
+        text-align: start;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* closed services section */
+         /* closed services section */
 
         #Contact {
             padding: 20px 10px;
         }
     
         #Contact-info {
-            padding: 20px 40px;
+            padding: 20px 20px;
         }
         
         #Contact h2 {
-            text-align: center;
+            text-align: start;
             font-size: 40px;
             text-transform: uppercase;
             margin-bottom: 1em;
         }
+        
         .contact-container {
             display: flex;
             justify-content: center;
@@ -795,113 +818,76 @@
         .contact {
             background: #1a1a1a;
             display: flex;
-            width: 95%;
+            width: 100%;
             justify-content: center;
             align-items: center;
             gap: 1.5em;
         }
+
+        .container-footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        #Footer {
+            padding: 20px 20px;
+        }
+
+        #Footer h2 {
+            text-align: start;
+        }
+
+        .footer  {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 0em;
+        }
+
+        #Footer img {
+            width: 50%;
+            height: 15vh;
+            text-align: start;
+            align-items: start;
+        }
+        
+        .footer svg {
+            fill: red;
+        }
+
+        .footer h5 {
+            color: #fff;
+            font-size: 30px;
+            margin-bottom: .5em;
+        }
+        
+        .footer p {
+            color: #aaa;
+            font-size: 20px;
+            width: 100%;
+        }
+
+        /*.footer  {
+            margin-left: 0%;
+        }*/
     
         .contact_info {
             width: 100%;
         }
         
         .contact img {
-            width: 100%;
+            display: none;
         }
-
-        #Footer {
-            padding: 20px 10px;
-        }
-        
-        #Footer h2 {
-            font-size: 40px;
-            text-align: start;
-            color: #dbdbdb;
-            margin-bottom: 1em;
-        }
-
-        #Customer {
-            padding: 20px 20px;
-        }
-        
-        #Customer h2 {
-            text-align: center;
-            margin-bottom: 1em;
-            color: #584047;
-        }
-        
-        #Customer span {
-            color: #9e3e79;
-        }
-        
-        .customer-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 1em;
-        }
-        
-        .customer {
-            width: 47%;
-            height: 50vh;
-            padding: 10px;
-            background: #f0c7f1;
-            box-shadow: 0 5px 10px rgba(12, 12, 12, 0.726);
-        }
-        
-        .customer i{
-            color: #9e3e79;
-            font-size: 3rem;
-        }
-        
-        .customer p {
-            color: #1a1a1a;
-            font-size: 17px;
-        }
-        
-
-
-        #banner {
-            height: 100vh;
-            width: 100%;
-        }
-
-        .footer  {
-            width: 90%;
-            height: 45vh;
-            padding: 5px;
-            margin-left: 0%;
-        }
-
-        .footer p {
-            color: #aaa;
-            text-align: start;
-            font-size: 19px;
-        }
-
-        #Contact-info {
-            padding: 20px 5px;
-        }
-        
-    
-        form {
-            width: 100%;
-            text-align: center;
-        }
-
     
         form input, textarea {
             width: 100%;
-            margin-left: 2em;
         }
 
     footer {
-        padding: 20px 40px;
+        padding: 20px 0px;
     }
 
     .backTop{
-        left: 90%;
+        left: 85%;
     }
 }
 
